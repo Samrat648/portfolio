@@ -12,7 +12,7 @@ const SITE_CONFIG = {
   mcqsPracticed: 60,
   toolsExplored: 13,
 
-  heroTitle: "AI/ML Student Portfolio",
+  heroTitle: "AI ML with Samrat sinha",
   heroBadge: "10 Days AI/ML Training Completed",
   heroSubtitle: "GNIT Kolkata | 2nd Year ECE | Ardent Computech Pvt. Ltd.",
 
@@ -46,7 +46,7 @@ const SITE_CONFIG = {
 // Easy placeholders for student names + links
 const STUDENTS = [
   {
-    name: "Student Name 1",
+    name: "samrat sinha ",
     image: "",
     department: "ECE",
     year: "2nd Year",
@@ -56,7 +56,7 @@ const STUDENTS = [
     cv: "https://drive.google.com/"
   },
   {
-    name: "Student Name 2",
+    name: "Tirtharaj Bhattacharya",
     image: "",
     department: "ECE",
     year: "2nd Year",
@@ -66,7 +66,7 @@ const STUDENTS = [
     cv: "https://drive.google.com/"
   },
   {
-    name: "Student Name 3",
+    name: "Sudipto Mondol",
     image: "",
     department: "ECE",
     year: "2nd Year",
