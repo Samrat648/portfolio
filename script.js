@@ -56,7 +56,7 @@ const STUDENTS = [
     cv: "https://drive.google.com/"
   },
   {
-    name: "Student Name 2",
+    name: "Sudipto mondal",
     image: "",
     department: "ECE",
     year: "2nd Year",
@@ -66,7 +66,7 @@ const STUDENTS = [
     cv: "https://drive.google.com/"
   },
   {
-    name: "Student Name 3",
+    name: "Tirtharaj bhattacharya",
     image: "",
     department: "ECE",
     year: "2nd Year",
