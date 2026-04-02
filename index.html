@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ✅ UPDATED TITLE -->
   <title>Samrat Portfolio | GNIT Kolkata</title>
-
-  <meta name="description" content="Samrat's AI/ML portfolio website for GNIT Kolkata ECE student trained in AI/ML at Ardent Computech Pvt. Ltd." />
+  <meta name="description" content="Premium student portfolio website for GNIT Kolkata ECE 2nd year students trained in AI/ML at Ardent Computech Pvt. Ltd." />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,28 +19,35 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <!-- =========================
+       Skip Link
+  ========================== -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <div class="bg-gradient-layer"></div>
-  <div class="bg-noise-layer"></div>
+  <!-- =========================
+       Animated Background Layers
+  ========================== -->
+  <div class="bg-gradient-layer" aria-hidden="true"></div>
+  <div class="bg-noise-layer" aria-hidden="true"></div>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <nav class="navbar container">
+  <!-- =========================
+       Header / Navbar
+  ========================== -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
       <a href="#home" class="brand">
         <span class="brand-mark">AI</span>
-        <span class="brand-text">Samrat Portfolio</span> <!-- ✅ UPDATED -->
+        <span class="brand-text">GNIT Portfolio</span>
       </a>
 
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle">
-          <i class="fa-solid fa-moon"></i>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false" title="Toggle theme">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
           <span>Dark</span>
         </button>
 
-        <button class="menu-toggle" id="menuToggle">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
           <span></span>
           <span></span>
         </button>
@@ -61,50 +65,89 @@
     </nav>
   </header>
 
-  <!-- MAIN -->
+  <!-- =========================
+       Main Content
+  ========================== -->
   <main id="main-content">
+    <!-- =========================
+         Hero Section
+    ========================== -->
+    <section class="hero" id="home" aria-label="Hero section">
+      <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
       <div class="container hero-content">
-        <div class="hero-text">
-
+        <div class="hero-text reveal">
           <span class="training-badge">
             <i class="fa-solid fa-certificate"></i>
-            <span>AI/ML Training Completed</span>
+            <span id="heroBadgeText">10 Days AI/ML Training Completed</span>
           </span>
-
-          <!-- ✅ UPDATED MAIN TITLE -->
           <h1 id="heroTitle">Samrat Portfolio</h1>
-
-          <p>
-            GNIT Kolkata | ECE Student | AI/ML Enthusiast
+          <p id="heroSubtitle">
+            GNIT Kolkata | 2nd Year ECE | Ardent Computech Pvt. Ltd.
           </p>
-
+          <p class="student-names-line" id="studentNamesLine"></p>
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">View Projects</a>
             <a href="#skills" class="btn btn-ghost">Explore Skills</a>
           </div>
         </div>
 
-        <div class="hero-panel">
+        <div class="hero-panel reveal tilt-card" data-tilt>
           <h2>Training Snapshot</h2>
-          <p>AI/ML learning journey with real-world projects.</p>
+          <p>
+            Practical AI/ML learning journey with project-first execution, real datasets,
+            coding discipline, and career-focused direction.
+          </p>
+          <div class="hero-panel-grid">
+            <article>
+              <i class="fa-solid fa-clock"></i>
+              <h3>10 Days</h3>
+              <p>Intensive hands-on learning</p>
+            </article>
+            <article>
+              <i class="fa-solid fa-diagram-project"></i>
+              <h3>9 Projects</h3>
+              <p>Beginner to intermediate portfolio</p>
+            </article>
+            <article>
+              <i class="fa-solid fa-list-check"></i>
+              <h3>60 MCQs</h3>
+              <p>Concept clarity and revision</p>
+            </article>
+            <article>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h3>13+ Tools</h3>
+              <p>Industry-relevant ecosystem</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- OTHER SECTIONS SAME -->
-    <!-- (No change needed below unless you want personalization) -->
+    <!-- REST OF YOUR FILE CONTINUES EXACTLY SAME -->
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- =========================
+       Footer
+  ========================== -->
   <footer class="site-footer">
-    <div class="container">
-      <h3>Samrat Portfolio</h3> <!-- ✅ UPDATED -->
-      <p>© 2026 Samrat Sinha</p>
+    <div class="container footer-inner">
+      <div>
+        <h3 id="footerTitle">AI/ML Portfolio Showcase</h3>
+        <p id="footerMeta"></p>
+        <p class="copyright" id="copyrightText"></p>
+      </div>
+
+      <div class="footer-social" id="footerSocialLinks"></div>
     </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
   </footer>
 
   <script src="script.js"></script>
